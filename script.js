@@ -54,17 +54,17 @@ function criarPalavraSecreta(){
  
     palavraSecretaSorteada = palavras[indexPalavra].nome;
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
-    console.log(palavraSecretaSorteada)
-    console.log(palavraSecretaCategoria)
 }
 
 montarPalavraNaTela();
 function montarPalavraNaTela(){
     const categoria = document.getElementById("categoria");
     categoria.innerHTML = palavraSecretaCategoria;
+
     const palavraTela = document.getElementById("palavra-secreta");
     palavraTela.innerHTML = "";
 
+    
     for(i = 0; i < palavraSecretaSorteada.length; i++){
         if(listaDinamica[i] == undefined){
             listaDinamica[i] = "&nbsp;"
@@ -114,8 +114,9 @@ function comparaListas(letra){
     }
 
     let vitoria = true;
-    for(i = 0; i < palavraSecretaSorteada.length; i++){
-        if(palavraSecretaSorteada[i] != listaDinamica){
+    for(i = 0; i < palavraSecretaSorteada.length; i++)
+    {
+        if(palavraSecretaSorteada[i] != listaDinamica[i]) {
             vitoria= false;
         }
     }
@@ -164,6 +165,11 @@ function abreModal( titulo, mensagem){
         show: true
     });
 }
+
+let btnReiniciar = document.querySelector("#btnReiniciar")
+    btnReiniciar.addEventListener("click", function(){
+        location.reload();
+    });
 
 
 
