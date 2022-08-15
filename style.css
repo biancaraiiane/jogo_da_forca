@@ -84,6 +84,29 @@ body {
 
 }
 
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    background-color: #dddddd;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    
+}
+
+
+span{
+    font-size: 20px;
+    word-spacing: 20px;
+}
+
 @media (min-width: 321px) {
     .teclas button{
         width: 25px;
@@ -150,27 +173,4 @@ body {
     #categoria {
         font-size: 2em;
     }
-}
-
-hr {
-    width: 100%;
-    height: 1px;
-    border: 0px;
-    background-color: #dddddd;
-}
-footer {
-    position: absolute;
-    bottom: 0;
-    color: #FFF;
-    width: 100%;
-    height: 100px;    
-    text-align: center;
-    
-}
-
-
-
-span{
-    font-size: 20px;
-    word-spacing: 20px;
 }
