@@ -85,28 +85,6 @@ body {
 }
 
 
-hr {
-    width: 100%;
-    height: 1px;
-    border: 0px;
-    background-color: #dddddd;
-}
-footer {
-    position: absolute;
-    bottom: 0;
-    color: #FFF;
-    width: 100%;
-    height: 100px;    
-    text-align: center;
-    
-}
-
-
-span{
-    font-size: 20px;
-    word-spacing: 20px;
-}
-
 @media (min-width: 321px) {
     .teclas button{
         width: 25px;
@@ -173,4 +151,23 @@ span{
     #categoria {
         font-size: 2em;
     }
+}
+
+
+hr {
+    background-color: bisque;
+}
+
+ .f-p {
+    position: relative;
+    text-align: center;
+    word-spacing: 0.3em;
+
+}
+
+footer, span {
+    position: relative;
+    text-align: center;
+    word-spacing: 0.3em;
+
 }
